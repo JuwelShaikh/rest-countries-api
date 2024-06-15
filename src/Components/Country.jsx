@@ -2,7 +2,7 @@
 
 const addStyle = {
     width: '400px',
-    border: '5px solid blue',
+    border: '5px solid skyblue',
     borderRadius: "10px",
     margin: '5px'
 }
@@ -13,12 +13,13 @@ const imgStyle = {
 }
 
 const Country = ({ country }) => {
-    const { name, flags } = country;
+    const { name, flags, population } = country;
     console.log(country)
     return (
         <div style={addStyle}>
             <h4>Name: <u>{name.common}</u></h4>
             <img style={imgStyle} src={flags.png} alt="" />
+            <p>Population: {population}</p>
 
         </div>
     );
