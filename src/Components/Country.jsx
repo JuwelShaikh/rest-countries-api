@@ -14,7 +14,7 @@ const imgStyle = {
 
 const Country = ({ country }) => {
     const { name, flags, population } = country;
-    console.log(country)
+
     return (
         <div style={addStyle}>
             <h4>Name: <u>{name.common}</u></h4>
