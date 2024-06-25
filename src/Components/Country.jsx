@@ -8,7 +8,7 @@ const addStyle = {
 }
 
 const imgStyle = {
-    with:'100px',
+    with: '100px',
     marginBottom: '10px'
 }
 
@@ -20,7 +20,7 @@ const Country = ({ country }) => {
             <h4>Name: <u>{name.common}</u></h4>
             <img style={imgStyle} src={flags.png} alt="" />
             <p>Population: {population}</p>
-
+            <button>Visit</button>
         </div>
     );
 };
