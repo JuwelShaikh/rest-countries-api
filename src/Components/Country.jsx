@@ -10,6 +10,7 @@ const addStyle = {
 
 const imgStyle = {
     with: '100px',
+    height: '150px',
     marginBottom: '10px'
 }
 
