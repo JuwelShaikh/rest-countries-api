@@ -1,5 +1,12 @@
 import { useState } from "react";
 
+const btnStyle = {
+    backgroundColor: '#242424',
+    color: 'white',
+    padding: '10px',
+    border:'5px solid skyblue',
+    borderRadius: "10px"
+}
 
 const addStyle = {
     width: '400px',
@@ -28,7 +35,7 @@ const Country = ({ country }) => {
             <h4>Name: <u>{name.common}</u></h4>
             <img style={imgStyle} src={flags.png} alt="" />
             <p>Population: {population}</p>
-            <button onClick={handleVisited}>Visit</button>
+            <button style={btnStyle} onClick={handleVisited}>Visit</button>
             <p>{visited ? 'Already visit this country' : 'I want to visit this country'}</p>
         </div>
     );
